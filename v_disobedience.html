@@ -102,6 +102,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -113,7 +128,7 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Воспитание · детский психолог · онлайн из любой страны</span>
   <h1>Ребёнок не слушается и спорит на каждое слово — а вы за границей и устали от ежедневной борьбы</h1>
   <p class="dek">Просьбу повторяешь по пять раз, в ответ — «не буду», спор и торг на каждое «нет». За рубежом давит вдвойне: бабушки рядом нет, местный специалист — на другом языке, а договориться с ребёнком хочется по-русски и без крика. Рабочий первый шаг — бесплатный онлайн-семинар с русскоязычным детским психологом про непослушание и спокойные границы: на русском, из любого часового пояса.</p>
